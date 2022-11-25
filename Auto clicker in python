@@ -1,0 +1,15 @@
+import webbrowser
+
+url1 = 'Youtube.com'
+url2 = 'google.com'
+url3 = 'github.com'
+url4 = 'https://www.linkedin.com/in/arpit-srivastav-272311243/'
+
+chrome_path = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+
+webbrowser.register("chrome",None,webbrowser.BackgroundBrowser(chrome_path))
+
+webbrowser.get("chrome").open_new_tab(url1)
+webbrowser.get("chrome").open_new_tab(url2)
+webbrowser.get("chrome").open_new_tab(url3)
+webbrowser.get("chrome").open_new_tab(url4)
